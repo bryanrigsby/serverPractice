@@ -2,8 +2,13 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 
+
+
 // Enable CORS
 app.use(cors());
+
+
+//--serverPractice--//
 
 app.get('/test', (req, res) => {
     res.send('Hello from Server!');
@@ -30,7 +35,7 @@ app.get('/pokemon', (req, res) => {
       });
 });
 
-//this is also where you would interact with your database
+
 
 const port = 3000;
 app.listen(port, () => {

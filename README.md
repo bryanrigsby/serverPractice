@@ -36,7 +36,7 @@ BACKEND (server)
 4) see serverExample.js for bare bones express server.js file
 
 5) run the server by running the following in the terminal within your server directory:
-    - node server.js
+    - node server.js or npm start
         you can find/edit this command in package.json
 
 helpful links
@@ -44,3 +44,41 @@ helpful links
     - https://jsonlint.com/
 2) free api that doesnt require a key
     - https://pokeapi.co/
+
+
+
+steps to set up mysql locally (on machine)
+
+1) download and install mysql community version
+    - https://dev.mysql.com/downloads/mysql/
+    - helpful video - https://www.youtube.com/watch?v=u96rVINbAUI
+
+2) download and install mysql workbench
+    - https://dev.mysql.com/downloads/workbench/
+
+-  to run mysql in terminal on mac 
+    - /usr/local/mysql/bin/mysql -u root -p  
+    - helpful video - https://www.youtube.com/watch?v=CBtBZgmP22M&t=1073s
+
+- to run mysql in command line on windows
+    - helpful video - https://www.youtube.com/watch?v=CDWrNLHyUWs&t=1s
+    - helpful link - techbrothersit.com/2018/11/how-to-connect-from-windows-command.html
+
+**TODO - put instructions on how to interact with local mysql db
+
+
+loop and function practice with json 'database'
+
+1) import database into server.js 
+    - import { employees } from './database/employees';
+
+2) write funtions to do the complete the following tasks
+    - display all employee objects
+    - display employees by name
+    - display total number of employees
+    - display employees who are older than 30
+    - display all male employees
+    - display all employees from Sales department
+    - display just the departments
+    - display each department only once with the number of employees in each department next to it
+    - create a contact card for each employee that includes name, email, and department

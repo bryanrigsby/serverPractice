@@ -6,8 +6,8 @@ function testJS(){
     } catch (error) {
         console.error('error in testJS()', error)
     }
-    
 }
+
 
 function testServer(){
     let one = document.getElementById("one")
@@ -34,19 +34,24 @@ function testPokemonAPI(){
     let one = document.getElementById("one")
     one.innerText = '';
     fetch("https://pokeapi.co/api/v2/pokemon/ditto")
-    .then(function(response) {
+   .then(function(response) {
         console.log('response from server', response.ok)
         if (response.ok) {
           return response.json();
         }
         throw new Error("Network response was not ok.");
       })
-      .then(function(data) {
+    .then(function(data) {
         // Process the response data here
         console.log('data from PokeAPI', data)
+        let imageURl = data.sprites.back_default;
+        console.log("imageURl", imageURl)
+        let imageElement = document.createElement('img');
+        imageElement.src = imageURl;
         let one = document.getElementById("one")
-        //drill into the object to get the data you want
-        one.innerText = data;
+        one.appendChild(imageElement);
+        // //drill into the object to get the data you want
+        // one.innerText = data.sprites.back_defaults;
       })
       .catch(function(error) {
         // Handle any error that occurred
