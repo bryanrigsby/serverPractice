@@ -38,6 +38,7 @@ BACKEND (server)
 5) run the server by running the following in the terminal within your server directory:
     - node server.js or npm start
         you can find/edit this command in package.json
+        
 
 helpful links
 1) to make objects easier to read
@@ -45,9 +46,32 @@ helpful links
 2) free api that doesnt require a key
     - https://pokeapi.co/
 
+loop and function practice with json 'database'
+
+1) import database into server.js 
+    - import { employees } from './database/employees';
+
+2) write funtions to do the complete the following tasks
+    - display all employee objects
+    - display employees by name
+    - display total number of employees
+    - display employees who are older than 30
+    - display all male employees
+    - display all employees from Sales department
+    - display just the departments
+    - display each department only once with the number of employees in each department next to it
+    - create a contact card for each employee that includes name, email, and department
 
 
-steps to set up mysql locally (on machine)
+Algorithm practice - https://codeguppy.com/blog/javascript-coding-challenges-for-beginners/index.html
+
+1) print all odd numbers to 100
+2) Calculate the sum of all numbers in a given array. let array = [2, 3, -1, 5, 7, 9, 10, 15, 95];
+
+Projects 
+1) Employee Dashboard
+
+wip -- steps to set up mysql locally (on machine) -- wip
 
 1) download and install mysql community version
     - https://dev.mysql.com/downloads/mysql/
@@ -67,18 +91,6 @@ steps to set up mysql locally (on machine)
 **TODO - put instructions on how to interact with local mysql db
 
 
-loop and function practice with json 'database'
 
-1) import database into server.js 
-    - import { employees } from './database/employees';
 
-2) write funtions to do the complete the following tasks
-    - display all employee objects
-    - display employees by name
-    - display total number of employees
-    - display employees who are older than 30
-    - display all male employees
-    - display all employees from Sales department
-    - display just the departments
-    - display each department only once with the number of employees in each department next to it
-    - create a contact card for each employee that includes name, email, and department
+

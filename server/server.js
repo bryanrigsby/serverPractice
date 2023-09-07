@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
+import { employees } from './database/employees';
 
 
 
@@ -37,7 +38,10 @@ app.get('/pokemon', (req, res) => {
 
 
 
+
 const port = 3000;
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
+
+

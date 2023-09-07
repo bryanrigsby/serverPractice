@@ -83,3 +83,21 @@ function testPokemonAPIFromServer(){
         console.error('error in testPokemonAPIFromServer()', error)
       });
 }
+
+
+function make500Buttons(){
+  const parentElement = document.getElementById('one');
+
+  for (let i = 1; i <= 500; i++) {
+    const newElement = document.createElement('button');
+    newElement.innerText = 'button' + i;
+    newElement.addEventListener('click', () => {
+      console.log('I am from button ' + i)
+    });
+    parentElement.appendChild(newElement)
+  }
+}
+
+function addMeToButton(){
+  console.log('i am added to button')
+}
