@@ -1,0 +1,16 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Alegreya'); */
+
+@font-face {
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/alegreya/v14/4UaHrEJCrhhnVA3DgluA96rpRAUXf1A.woff2) format('woff2');
+}
+
+
+ 
+ h1 {
+    font-family: 'Alegreya', serif;
+    background-color: pink;
+ }
+

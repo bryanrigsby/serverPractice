@@ -9,15 +9,18 @@ Steps to set up Javascript project with Express server
 2) clone repo to local machine via Github desktop
 3) open project in vs code
 4) create index.html file
-5) create index.js file
-6) create server directory in root of project
-7) create server.js file in server director
+5) create index.css file
+6) create index.js file
+7) create server directory in root of project
+8) create server.js file in server director
 
 
 FRONTEND
-1) link index.js in bottom of html just before the closing </body> with script tag
+1) link index.css at top of html page in <head> section with link tag
+    - <link rel="stylesheet" href="./index.css">
+2) link index.js in bottom of html just before the closing </body> with script tag
     - <script src="./index.js"></script>
-    - the ./ means that the file is in the same directory
+the ./ means that the file is in the same directory
 
 BACKEND (server)
 1) make sure node is installed on your machine 
